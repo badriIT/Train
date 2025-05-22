@@ -1,0 +1,230 @@
+.allinall {
+    background: #fafbfc;
+    padding: 24px;
+    text-align: center;
+    max-width: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+*{
+    text-align: center;
+}
+
+.payment-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    width: auto;
+    margin: 0 auto;
+    padding: 32px 32px 24px 32px;
+}
+
+.stepper {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+    font-size: 15px;
+    color: #b0b0b0;
+}
+
+.step {
+    padding: 4px 16px;
+    border-radius: 16px;
+    background: #f3f3f3;
+}
+
+.step.active {
+    background: #1976d2;
+    color: #fff;
+    font-weight: bold;
+}
+
+.ticket-receipt {
+    margin-top: 8px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.trip-info {
+    display: flex;
+    gap: 18px;
+    background: #f6f8fa;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.user-info {
+    display: flex;
+    gap: 18px;
+    background: #f6f8fa;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    padding: 16px 0 0 0;
+}
+
+.seat-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 18px;
+    font-size: 15px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.seat-info th,
+.seat-info td {
+
+    border: 1px solid #e0e0e0;
+    padding: 10px 16px;
+    text-align: left;
+}
+
+.seat-info th {
+    background: #f3f3f3;
+    font-weight: 600;
+}
+
+.payment-info {
+    margin-top: 18px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-info>div:first-child {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.payment-info>div:last-child {
+    text-align: right;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 18px 0;
+}
+
+.warning-msg {
+    color: #e53935;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logo-img {
+    padding: 0px 10px ;
+    background-color: orange;
+    border-radius: 8px;
+}
+
+.logo-text {
+     font-weight: bold;
+     font-size: 24px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.adwkoadkw{
+    display: flex;
+    justify-content: centere;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.adwkoadk{
+    display: flex;
+    justify-content: centere;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line{
+    zoom: .5;
+}
+
+ .user-info {
+      padding: 12px;
+    }
+
+
+/* ...existing code... */
+
+/* Hide mobile cards by default, show table */
+/* ...existing code... */
+
+/* Hide mobile cards by default, show table */
+.mobile-cards { display: none; }
+.desktop-table { display: block; }
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 750px) {
+
+    .trip-info, .info-row, .user-info, .payment-info {
+        flex-direction: column;
+    }
+
+    .user-info {
+      padding: 12px;
+    }
+
+  .desktop-table {
+    display: none !important;
+  }
+  .mobile-cards { 
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .ticket-card {
+    background: #f6f8fa;
+    border-radius: 8px;
+    padding: 12px 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    word-break: break-word;
+  }
+}
+
+/* For very small screens */
+@media screen and (max-width: 400px) {
+  .allinall {
+    zoom: .8;
+  }
+
+   .allinall {
+    zoom: .6;
+  }
+
+  
+}
+
+/* ...existing code... */
